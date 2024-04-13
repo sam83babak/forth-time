@@ -14,7 +14,21 @@ namespace Dev_Card_MvC.Models
 
 		public string Client { get; set; }
 
+		public string Jpeg_name { get; set; }
 
+
+		public Project(long id, string title, string description, string client, string jpeg_name)
+		{
+
+			Id = id;
+			Title = title;
+			Description = description;	
+			Client = client;
+			Jpeg_name = jpeg_name;
+
+		}
 
 	}
+	
+	 
 }

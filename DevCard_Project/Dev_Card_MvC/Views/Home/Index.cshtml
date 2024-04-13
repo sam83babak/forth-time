@@ -32,11 +32,13 @@
 		</div>
 	</div>
 </section>
+@*lOADING PARTIAL view*@
 @*<partial name="Projects" />*@
-
 @*@await Html.PartialAsync("Projects");*@
+@*@await Html.PartialAsync("Projects", new List<Project>());
+	@*Loading View Component*@
 
-@await Html.PartialAsync("Projects", new List<Project>());
+@await Component.InvokeAsync(name: "Projects")
 
 <div class="container">
 	<hr>
