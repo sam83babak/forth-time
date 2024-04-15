@@ -7,7 +7,7 @@ namespace Dev_Card_MvC.ViewComponents
 	public class ProjectsViewComponent : ViewComponent
 	{
 
-		public IViewComponentResult Invoke()
+		public IViewComponentResult Invoke(string Name)
 		{
 			var projects = new List<Project>()
 

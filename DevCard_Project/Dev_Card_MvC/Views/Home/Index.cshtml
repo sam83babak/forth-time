@@ -38,7 +38,7 @@
 @*@await Html.PartialAsync("Projects", new List<Project>());
 	@*Loading View Component*@
 
-@await Component.InvokeAsync(name: "Projects")
+@await Component.InvokeAsync(name: "Projects", arguments:new {name = "Sam"})
 
 <div class="container">
 	<hr>
