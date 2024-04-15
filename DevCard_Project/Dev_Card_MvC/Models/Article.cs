@@ -12,6 +12,17 @@ namespace Dev_Card_MvC.Models
 
 		public string Description { get; set; }
 	
+
+		public string Image {  get; set; }
+
+
+		public Articale(long id, string title,string description, string image) { 
+		
+		    Id = id;
+			Title = title;
+			Description = description;
+			Image = image;
+		}
 	
 	}
 
