@@ -42,12 +42,26 @@ namespace Dev_Card_MvC.Controllers
 		//	return File(filebyte, MediaTypeNames.Text.Plain, filename);
 		//}
 
-		public FileResult Index()
+		//public FileResult Index()
+		//{
+		//	var filebyte = System.IO.File.ReadAllBytes("wwwroot/assets/images/promo-banner.jpg");
+		//	const string filename = "salam.jpg";
+		//	return File(filebyte, MediaTypeNames.Image.Jpeg, filename);
+		//}
+
+		public RedirectResult Index()
 		{
-			var filebyte = System.IO.File.ReadAllBytes("wwwroot/assets/images/promo-banner.jpg");
-			const string filename = "salam.jpg";
-			return File(filebyte, MediaTypeNames.Image.Jpeg, filename);
+
+
+			return Redirect("https://www.google.com");
 		}
+
+		//public RedirectToActionResult Index()
+		//{
+
+
+		//	return RedirectToAction("Contact",controllerName:"Home");
+		//}
 
 	}
 }
