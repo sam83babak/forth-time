@@ -49,19 +49,28 @@ namespace Dev_Card_MvC.Controllers
 		//	return File(filebyte, MediaTypeNames.Image.Jpeg, filename);
 		//}
 
-		public RedirectResult Index()
-		{
+		//public RedirectResult Index()
+		//{
 
 
-			return Redirect("https://www.google.com");
-		}
+		//	return Redirect("https://www.google.com");
+		//}
 
 		//public RedirectToActionResult Index()
 		//{
 
 
 		//	return RedirectToAction("Contact",controllerName:"Home");
-		//}
+	//}
+	//public IActionResult index()
+	//{
+		//return new badrequestresult();
+		//return new nocontentresult();
+		//return new notfoundresult();
 
-	}
+		//return new badrequestresult();
+		//return new statuscoderesult(510);
+		//	}
+
+}
 }
