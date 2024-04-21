@@ -18,6 +18,7 @@ namespace Dev_Card_MvC.Controllers
         [HttpGet]
 		public IActionResult Contact()
 		{
+            var model = new Contact();
 			return View();
 		}
 
